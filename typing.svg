@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 80" width="700" height="80">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&amp;family=Inter:wght@700&amp;family=Press+Start+2P&amp;family=VT323&amp;display=swap');
+
+      .cursor {
+        animation: blink 0.8s infinite;
+      }
+
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+
+      /* Base text styles */
+      .text-item {
+        font-size: 34px;
+        dominant-baseline: middle;
+        text-anchor: middle;
+        opacity: 0;
+      }
+
+      /* 1. kuy124 -> Modern / Normal Font */
+      .item-1 {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        font-weight: 700;
+        fill: #FFFFFF;
+        animation: cycle-1 12s infinite;
+      }
+
+      /* 2. Windows Dev -> Windows Segoe UI Font */
+      .item-2 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        fill: #00A4EF; /* Windows Blue */
+        animation: cycle-2 12s infinite;
+      }
+
+      /* 3. <coding /> -> Monospace / Code Font */
+      .item-3 {
+        font-family: 'Fira Code', 'Courier New', monospace;
+        font-weight: 700;
+        fill: #00F59B; /* Emerald Terminal Green */
+        letter-spacing: 1px;
+        animation: cycle-3 12s infinite;
+      }
+
+      /* 4. retro_mode -> 8-Bit Pixel Font */
+      .item-4 {
+        font-family: 'Press Start 2P', monospace;
+        font-size: 22px;
+        fill: #FACC15; /* Retro Yellow */
+        animation: cycle-4 12s infinite;
+      }
+
+      /* Keyframe timing (12s total loop, 3s per slide) */
+      @keyframes cycle-1 {
+        0%, 20% { opacity: 1; transform: translateY(0); }
+        25%, 100% { opacity: 0; transform: translateY(-4px); }
+      }
+      @keyframes cycle-2 {
+        0%, 24% { opacity: 0; transform: translateY(4px); }
+        25%, 45% { opacity: 1; transform: translateY(0); }
+        50%, 100% { opacity: 0; transform: translateY(-4px); }
+      }
+      @keyframes cycle-3 {
+        0%, 49% { opacity: 0; transform: translateY(4px); }
+        50%, 70% { opacity: 1; transform: translateY(0); }
+        75%, 100% { opacity: 0; transform: translateY(-4px); }
+      }
+      @keyframes cycle-4 {
+        0%, 74% { opacity: 0; transform: translateY(4px); }
+        75%, 95% { opacity: 1; transform: translateY(0); }
+        100% { opacity: 0; transform: translateY(-4px); }
+      }
+    </style>
+  </defs>
+
+  <g transform="translate(350, 40)">
+    <!-- 1. Normal Modern Sans -->
+    <text class="text-item item-1">kuy124</text>
+    
+    <!-- 2. Windows Segoe UI -->
+    <text class="text-item item-2">⊞ Windows User</text>
+    
+    <!-- 3. Programmer Code Monospace -->
+    <text class="text-item item-3">&gt;_ console.log("code");</text>
+    
+    <!-- 4. Retro Pixel Arcade -->
+    <text class="text-item item-4">PRESS START &gt;&gt;</text>
+  </g>
+</svg>
