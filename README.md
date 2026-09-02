@@ -1,1 +1,1 @@
-Hi
+<div align="center"> <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=36&duration=2800&pause=1000&color=50FA7B&center=true&vCenter=true&width=450&height=70&lines=%3E_kuy124;%3E_welcome." alt="Typing SVG" /> <p><i>Building and exploring projects on GitHub.</i></p> </div>
