@@ -1,3 +1,3 @@
-<div align="center">
-  <img src="./kuy124.svg" alt="kuy124" width="900" />
-</div>
+<p align="center">
+  <img src="./kuy124-loading.gif" alt="KUY124" width="900" />
+</p>
