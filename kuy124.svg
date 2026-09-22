@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="180" viewBox="0 0 900 180" role="img" aria-labelledby="title desc">
+  <title id="title">kuy124</title>
+  <desc id="desc">An animated kuy124 wordmark.</desc>
+  <defs>
+    <filter id="glow" x="-40%" y="-80%" width="180%" height="260%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="900" height="180" rx="14" fill="#0d1117"/>
+  <rect x="1" y="1" width="898" height="178" rx="13" fill="none" stroke="#1d2733"/>
+  <path d="M310 135H590" stroke="#00f2fe" stroke-width="2" opacity=".55">
+    <animate attributeName="pathLength" values="0;1;1;0" dur="12s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- slide in / fade out -->
+  <text x="450" y="105" text-anchor="middle" fill="#00f2fe" filter="url(#glow)" font-family="JetBrains Mono, Consolas, monospace" font-size="62" font-weight="800" letter-spacing="3">kuy124
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.09;.22;.30" dur="12s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="-120 0;0 0;0 0;120 0" keyTimes="0;.09;.22;.30" dur="12s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- scale in / fade out -->
+  <text x="450" y="105" text-anchor="middle" fill="#00f2fe" filter="url(#glow)" font-family="JetBrains Mono, Consolas, monospace" font-size="62" font-weight="800" letter-spacing="3">kuy124
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes=".34;.42;.55;.63" dur="12s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="scale" additive="sum" values=".55;.55;1;1;1.18" keyTimes=".34;.37;.42;.55;.63" dur="12s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- drop in / rise out -->
+  <text x="450" y="105" text-anchor="middle" fill="#00f2fe" filter="url(#glow)" font-family="JetBrains Mono, Consolas, monospace" font-size="62" font-weight="800" letter-spacing="3">kuy124
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes=".67;.75;.88;.97" dur="12s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0 -55;0 0;0 0;0 45" keyTimes=".67;.75;.88;.97" dur="12s" repeatCount="indefinite"/>
+  </text>
+</svg>
